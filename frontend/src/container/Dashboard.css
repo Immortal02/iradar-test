@@ -1,0 +1,18 @@
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.condition {
+  width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+  .condition {
+    width: 100%;
+    max-width: inherit;
+  }
+}

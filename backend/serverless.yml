@@ -1,0 +1,24 @@
+org: serverlessinc
+app: iradar
+service: iradar
+
+provider:
+  name: aws
+  stage: dev
+  runtime: nodejs12.x
+
+functions:
+  conditionlist:
+    name: manage-conditions
+    handler: src/server.handler
+    events:
+      - http: ANY
+      - http: 'ANY {proxy+}'
+
+custom:
+  serverless-offline:
+    httpPort: 5000
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline

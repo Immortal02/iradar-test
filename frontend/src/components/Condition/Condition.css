@@ -1,0 +1,31 @@
+.condition-container {
+  padding: 25px 20px;
+}
+
+.image {
+  width: 100%;
+  min-width: 100px;
+  min-height: 250px;
+  user-select: none;
+}
+
+.label {
+  font-size: large;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+
+.more {
+  color: #0790cf;
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 10px;
+  user-select: none;
+}
+
+@media screen and (max-width: 800px) {
+  .more {
+    display: block;
+    padding-left: 0px;
+  }
+}
